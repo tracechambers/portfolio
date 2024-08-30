@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livable Meck</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>Livable Meck</h1>
+            <img src="images/asset2.png" alt="Project 1 Image" class="project-image">
+            <p class="project-description">
+                This logo was created for Livable Meck, a community-focused initiative aimed at enhancing the quality of life in Mecklenburg County. The client wanted a logo that conveys growth, sustainability, and community. My goal was to develop a design that feels both nurturing and progressive.<br><br>
+
+The logo features a harmonious blend of teal and sage green, colors that represent growth, tranquility, and a connection to nature. The abstract leaf and bird elements symbolize a commitment to environmental sustainability and a thriving, vibrant community.<br><br>
+
+The typography is clean and modern, with "LIVABLE" in a lighter weight to emphasize the nurturing aspect, while "MECK" is bold to convey strength and stability. The overall design aims to create a sense of balance and unity, reflecting the collaborative efforts of the community to create a livable and sustainable future.<br><br>
+
+The simplicity of the design ensures versatility and adaptability across various mediums, from digital platforms to printed materials, making it an effective and memorable representation of Livable Meck's mission and values.
+
+
+
+
+
+ 
+            </p>
+        </div>
+    </section>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden'); // Hide header on scroll down
+        } else {
+            header.classList.remove('hidden'); // Show header on scroll up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

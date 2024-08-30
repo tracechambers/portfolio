@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beforeland</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>The Beforeland</h1>
+            <img src="images/asset1.png" alt="Project 1 Image" class="project-image">
+            <p class="project-description">
+                For the logo design of this modern dinosaur-themed hotel, I aimed to blend prehistoric essence with contemporary elegance. The logo features a stylized dinosaur silhouette, balancing strength and sophistication. Earthy tones evoke the natural environment, while vibrant accents add modernity and excitement.<br>
+<br>
+
+
+Clean, bold lines ensure recognizability across various mediums, and the modern sans-serif typography complements the silhouette. Subtle textures add depth, hinting at rugged terrains while maintaining a polished look. This fusion creates a unique visual identity, promising a distinctive and memorable experience.
+
+
+
+
+
+
+ 
+            </p>
+        </div>
+    </section>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden'); // Hide header on scroll down
+        } else {
+            header.classList.remove('hidden'); // Show header on scroll up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

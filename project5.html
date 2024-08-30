@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salty Face</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>Salty Face</h1>
+            <img src="images/asset5.png" alt="Project 1 Image" class="project-image">
+            <p class="project-description">
+                This logo was created for an ocean-themed street-wear company. Drawing inspiration from the dynamic and ever-changing nature of the ocean, I employed a color palette rich in blues and turquoises to evoke a strong coastal vibe. The bold and modern typography was chosen to ensure the brand name stands out, making a memorable impression at first glance.<br><br>
+
+
+I incorporated elements that suggest movement and energy, to go with the essence of the brand. The logo’s versatility will allow a  high-quality appearance across various applications, from apparel to marketing materials.<br>
+<br>
+
+
+Through this design, I aimed to resonate with the brand’s core values and target audience, effectively communicating a lifestyle centered around the adventure and coastal living. This project exemplifies my ability to create impactful and contextually relevant branding solutions that enhance a company’s identity.
+<br>
+<br>
+
+
+
+
+
+ 
+            </p>
+        </div>
+    </section>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden'); // Hide header on scroll down
+        } else {
+            header.classList.remove('hidden'); // Show header on scroll up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

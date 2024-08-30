@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace Chambers - Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scroll down
+            header.classList.add('hidden');
+        } else {
+            // Scroll up
+            header.classList.remove('hidden');
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+    });
+</script>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Trace Chambers</h1>
+            <p>Creative Graphic Designer based in Charlotte, NC.</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm a Freelance Graphic Designer with over 2 years of  experience in the Adobe Creative Suite, including Illustrator, InDesign, Photoshop, and more. My main focus is in Brand Identity Design, where I excel in crafting captivating logos, business suites, and beyond.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h1>Portfolio</h1>
+
+        <!-- Logos Section -->
+        <section class="portfolio-section logos">
+            <h3>Logos</h3>
+            <div class="gallery">
+                <!-- Project 1 -->
+                <div class="gallery-item logo">
+                    <a href="project1.html">
+                        <img src="images/asset1.png" alt="Project 1">
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="gallery-item logo">
+                    <a href="project2.html">
+                        <img src="images/asset2.png" alt="Project 2">
+                    </a>
+                </div>
+                <!-- Project 5 -->
+                <div class="gallery-item logo">
+                    <a href="project5.html">
+                        <img src="images/asset5.png" alt="Project 5">
+                    </a>
+                </div>
+                <!-- Project 7 -->
+                <div class="gallery-item logo">
+                    <a href="project7.html">
+                        <img src="images/asset7.png" alt="Project 7">
+                    </a>
+                </div>
+                <!-- Project 8 -->
+                <div class="gallery-item logo">
+                    <a href="project8.html">
+                        <img src="images/asset8.png" alt="Project 8">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Posters Section -->
+<section class="portfolio-section posters">
+    <h3>Posters</h3>
+    <div class="gallery">
+        <!-- Project 3 -->
+        <div class="gallery-item poster">
+            <a href="project3.html">
+                <img src="images/asset3.png" alt="Project 3">
+            </a>
+        </div>
+        <!-- Project 6 -->
+        <div class="gallery-item poster project-6">
+            <a href="project6.html">
+                <img src="images/asset6.png" alt="Project 6">
+            </a>
+        </div>
+    </div>
+</section>
+</section>
+        <!-- Album Covers Section -->
+        <section class="portfolio-section albumcovers">
+            <h3>Album Covers</h3>
+            <div class="gallery">
+                <!-- Project 4 -->
+                <div class="gallery-item album-cover">
+                    <a href="project4.html">
+                        <img src="images/asset4.png" alt="Project 4">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjS9yzRhbFv9bvej1HW2Z0ge-s71YfJVZvANgwSydEzwb5YQ/viewform?embedded=true" width="900" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

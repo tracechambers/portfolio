@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeface Poster Set</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>Typeface Poster Set</h1>
+            <img src="images/asset6.png" alt="Project 1 Image" class="project-image">
+            <p class="project-description">
+In this project, I explored the versatility and impact of two different typefaces through a series of poster designs. Each poster showcases a unique typeface, highlighting its distinct characteristics and potential applications in graphic design.<br>
+<br>
+For each poster, I selected a theme and visual style that complements the featured typeface. By pairing the typefaces with various color schemes, layouts, and graphic elements, I aimed to create a cohesive collection. The use of contrasting colors and bold layouts ensures that the typefaces stand out, making each poster a striking visual statement.<br><br>
+
+This set is designed to inspire fellow designers and typographers by showcasing the power of well-chosen typography. It serves as a reminder that typefaces are not just functional elements but integral components of a design that can evoke emotions and convey messages.
+
+
+
+
+
+
+
+ 
+            </p>
+        </div>
+    </section>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden'); // Hide header on scroll down
+        } else {
+            header.classList.remove('hidden'); // Show header on scroll up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

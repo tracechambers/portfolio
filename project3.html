@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardin Music Poster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>Guardin Music Poster</h1>
+            <img src="images/asset3.png" alt="Project 1 Image" class="project-image">
+            <p class="project-description">
+   In this project, I aimed to capture the essence and energy of Guardin's music through a dynamic and visually striking poster design. Inspired by Guardin’s unique sound and style, I blended bold typography with vibrant colors and abstract elements to create a piece that resonates with both the music and its audience. The use of layered textures and contrasting tones helps to convey the depth and emotion present in Guardin's tracks, making the poster not just a promotional tool but a visual representation of the artist's creative spirit.<br><br>
+
+I chose a bold, modern typeface to ensure the artist's name and event details stand out, creating an immediate impact. Vibrant, contrasting colors were used to reflect the energy and mood of Guardin's music, drawing the viewer's eye and evoking an emotional response. By incorporating various textures and layered elements, I aimed to add depth and complexity to the design, mirroring the multifaceted nature of the music. Abstract shapes and patterns were integrated to add a sense of movement and flow, echoing the rhythmic qualities of Guardin's sound.
+
+
+
+
+
+
+
+ 
+            </p>
+        </div>
+    </section>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden'); // Hide header on scroll down
+        } else {
+            header.classList.remove('hidden'); // Show header on scroll up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

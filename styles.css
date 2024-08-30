@@ -1,0 +1,341 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+}
+
+h3 {
+    text-align: left;
+    padding-left: 270px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 90px; /* Reduced gap */
+    scale: 80%;
+    padding: 0;
+}
+
+/* General Gallery Item Styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #e0e0e0; /* Grey background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width of the grid item */
+    height: 0; /* Set height to 0 */
+    padding-bottom: 75%; /* Adjusted Aspect Ratio */
+}
+
+/* General Gallery Item Styles for Images */
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the container */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust weight as needed */
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* Logo Link Styles */
+nav .logo {
+    font-size: 24px;
+    color: #ecf0f1;
+    font-weight: bold;
+    margin: 15px;
+    text-decoration: none; /* Removes the underline */
+    transition: color 0.3s ease;
+}
+
+nav .logo:hover {
+    color: #e74c3c;
+}
+
+
+header nav .logo:hover {
+    color: #e74c3c;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 15px;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Navbar Hidden Style */
+header.hidden {
+    transform: translateY(-100%); /* Move header out of view */
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('images/background.png'); /* Path to your background image */
+    background-size: cover; /* Scales the image to cover the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero .btn {
+    background-color: #e74c3c;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #c0392b;
+}
+
+/* About Section Styles */
+.about {
+    background-color: rgba(0, 0, 0, 0.1); /* Light grey background */
+    padding: 80px 0;
+    text-align: left;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.portfolio-section {
+    margin-bottom: 60px;
+}
+
+.portfolio-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    background-color: #b0b0b0; /* Darker grey background on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Ensure scaling is centered */
+    filter: brightness(0.7);
+}
+
+/* Project Detail Styles */
+.project-detail {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.project-detail .container {
+    max-width: 800px; /* Increase max-width to allow more space */
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-detail .project-image {
+    width: 100%; /* Full width of the container */
+    max-width: 1000px; /* Ensure the image doesn't exceed a certain width */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 20px;
+}
+
+/* Project Detail H1 Styles */
+.project-detail h1 {
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 48px;
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: visible; /* Allows text to overflow */
+    position: relative; /* Position relative for adjustment */
+    text-align: center; /* Centers the heading */
+    margin: 20px auto; /* Centers non-overflowing headings */
+    display: inline-block; /* Keeps the text inside a minimal bounding box */
+    max-width: 100%; /* Ensures the heading doesn't get cut off */
+
+    letter-spacing: 20px;
+}
+
+
+
+.project-detail .project-description {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #ecf0f1; /* Light grey background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
+
+.contact form button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
+
+.contact form button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}

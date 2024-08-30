@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bummer Album Cover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>Bummer Album Cover</h1>
+            <img src="images/asset4.png" alt="Project 1 Image" class="project-image">
+            <p class="project-description">
+For the "BUMMER" album cover by 93FEETOFSMOKE, I aimed to visually represent the raw, emotional depth of the music. The design features a gritty, urban aesthetic with bold typography and striking imagery to capture the album's intense and introspective vibe.<br><br>
+
+I used a muted color palette with contrasting elements to convey a sense of melancholy and intensity, aligning with the album's themes. The bold, distressed typeface adds to the raw, unfiltered feel of the design. The imagery is carefully selected to evoke the emotions and experiences expressed in the music, creating a powerful visual narrative that complements the auditory journey of the album.<br><br>
+
+Overall, this album cover is designed to resonate with fans and new listeners alike, providing a visual gateway into the emotional landscape of 93FEETOFSMOKE's "BUMMER."
+
+
+
+
+
+
+ 
+            </p>
+        </div>
+    </section>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden'); // Hide header on scroll down
+        } else {
+            header.classList.remove('hidden'); // Show header on scroll up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Gardens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Trace Chambers</a> <!-- Link this to the home page -->
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>Amazing Gardens</h1>
+            <img src="images/asset8.png" alt="Project 1 Image" class="project-image">
+            <p class="project-description">
+     Amazing Gardens & Landscapes approached me to design a logo that captures their expertise in creating beautiful, functional landscapes. The circular motif symbolizes growth, harmony, and natural cycles, while the segmented pie chart within the circle represents the diverse services they offer, such as garden design, landscaping, and maintenance.<br><br>
+
+
+The green color palette evokes nature, renewal, and eco-friendliness, with a gradient effect adding depth and modernity. The variation in weights of the type with "Amazing" in a heavier wight and "Gardens & Landscapes" in a lighter weight helps convey confidence while ensuring readability and professionalism. Dotted lines radiating from the center add a touch of modernity and movement, symbolizing growth and innovation. The contrast between sharp segment edges and the soft circle shape blends structured design with natural beauty.<br>
+<br>
+
+
+This versatile logo adapts well to various branding materials, appealing to a broad audience and reflecting the company's commitment to diverse client needs. The final design effectively communicates the brand’s core values and services, helping Amazing Gardens & Landscapes stand out in the competitive landscaping market.
+
+
+ 
+            </p>
+        </div>
+    </section>
+<script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.classList.add('hidden'); // Hide header on scroll down
+        } else {
+            header.classList.remove('hidden'); // Show header on scroll up
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+    <footer>
+        <p>&copy; 2024 Trace Chambers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
